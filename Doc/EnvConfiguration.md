@@ -10,11 +10,11 @@
 
 （1）找到高级环境变量窗口
 
-![env-1](.\img\env-1.png)
+![env-1](./img/env-1.png)
 
 （2）进入后，找到系统变量，点击【path】，点击【编辑】，点击【新建】。复制路径【`install_dir\opencv\build\x64\vc15\bin`】
 
-![env-2](.\img\env-2.png)
+![env-2](./img/env-2.png)
 
 ### 3. Virtual Studio
 
@@ -22,15 +22,15 @@
 
 （1）打开VS，我的是VS2019。新建一个空的项目。调整【解决方案】为【debug-x64】。
 
-![env-3](.\img\env-3.png)
+![env-3](./img/env-3.png)
 
 （2）配置属性【VC++目录】【包含目录】右侧箭头编辑，添加`install_dir\opencv\build\include`和`install_dir\opencv\build\include\opencv2`。【库目录】右侧箭头编辑，添加`install_dir\opencv\build\x64\vc15\lib`
 
-![env-4](.\img\env-4.png)
+![env-4](./img/env-4.png)
 
 （3）配置属性【链接器】【输入】【附加依赖项】右侧箭头编辑，添加opencv_world400d.lib（在路径`install_dir\opencv\build\x64\vc15\lib`）
 
-![env-5](.\img\env-5.png)
+![env-5](./img/env-5.png)
 
 ### 4. 测试
 
